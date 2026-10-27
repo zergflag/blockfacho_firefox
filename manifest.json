@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Blockfacho",
+  "version": "1.0.6",
+  "description": "Bloque sur X les comptes de l'annuaire blockfacho, depuis ta session déjà connectée.",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://blockfacho.readymoss8.chatgpt.site/*",
+    "https://blockfacho.pages.dev/*",
+    "https://x.com/*",
+    "https://twitter.com/*",
+    "https://www.x.com/*",
+    "https://www.twitter.com/*"
+  ],
+  "action": {
+    "default_title": "Blockfacho"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "blockfacho@blockfacho.pages.dev",
+      "strict_min_version": "109.0"
+    }
+  }
+}
